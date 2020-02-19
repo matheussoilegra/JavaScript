@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jsPDF</title>
+</head>
+
+<body>
+  <form class="formData">
+    <div class="formBox">
+      <label for="name">Nome</label>
+      <input type="text" id="name" placeholder="Nome">
+    </div>
+    <div class="formBox">
+      <label for="age">Idade</label>
+      <input type="number" id="age" placeholder="Idade">
+    </div>
+    <div class="formBox">
+      <label for="retirementAge">Idade de Aposentadoria</label>
+      <input type="number" id="retirementAge" placeholder="Idade de Aposentadoria">
+    </div>
+  </form>
+  <button onclick="createPDF()">GERAR PDF</button>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+  integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+
+<script src="index.js"></script>
+
+</html>
