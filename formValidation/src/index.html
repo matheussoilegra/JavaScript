@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+  <title>Simulador</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Simulador - Cobertura de Vida</h2>
+    </div>
+    <form class="form" id="form">
+      <div class="form-control">
+        <label for="name">Nome</label>
+        <input type="text" placeholder="Nome" id="name" />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label>Idade Atual</label>
+        <input type="number" placeholder="Idade Atual" id="age">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <smal>Mensagem de erro</smal>
+      </div>
+
+      <div class="form-control">
+        <label>Idade de Aposentadoria</label>
+        <input type="number" placeholder="Idade de Aposentadoria" id="retirementAge">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <smal>Mensagem de erro</smal>
+      </div>
+
+      <div class="form-control">
+        <label>Profissão</label>
+        <input type="text" placeholder="Profissão" id="companyPosition">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <smal>Mensagem de erro</smal>
+      </div>
+
+      <div class="form-control">
+        <label>Renda Mensal</label>
+        <input type="number" placeholder="Renda Mensal" id="wage">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <smal>Mensagem de erro</smal>
+      </div>
+
+      <div class="form-control">
+        <label>Regime Trabalhista</label>
+        <input type="text" placeholder="Regime Trabalhista" id="laborRegime">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <smal>Mensagem de erro</smal>
+      </div>
+
+      <div class="form-control">
+        <label>Despesas Fixas Mensais</label>
+        <input type="number" placeholder="Despesas Fixas Mensais" id="fixedExpenses">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <smal>Mensagem de erro</smal>
+      </div>
+
+      <div class="form-control">
+        <label>Despesas com Dependentes</label>
+        <input type="number" placeholder="Despesas com Dependentes" id="dependentsExpenses">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <smal>Mensagem de erro</smal>
+      </div>
+
+      <div class="form-control">
+        <label>Despesas com Educação Anual</label>
+        <input type="number" placeholder="Despesas com Educação Anual" id="educationExpenses">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <smal>Mensagem de erro</smal>
+      </div>
+
+      <div class="form-control">
+        <label>Bens / Imóveis</label>
+        <input type="number" placeholder="Bens / Imóveis" id="heritage">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <smal>Mensagem de erro</smal>
+      </div>
+
+      <div class="form-control">
+        <label>Investimentos</label>
+        <input type="number" placeholder="Investimentos" id="investiments">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <smal>Mensagem de erro</smal>
+      </div>
+
+      <div class="form-control">
+        <label>Liquidez</label>
+        <input type="number" placeholder="Liquidez" id="liquidity">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <smal>Mensagem de erro</smal>
+      </div>
+
+      <div class="form-control">
+        <label>Estado de Saúde / Medicamentos</label>
+        <input type="text" placeholder="Estado de Saúde / Medicamentos" id="heathState">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <smal>Mensagem de erro</smal>
+      </div>
+      <button>SIMULAR</button>
+    </form>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+  integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
+</html>
