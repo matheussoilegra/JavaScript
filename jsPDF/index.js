@@ -16,13 +16,47 @@ function createPDF() {
 
     doc.addImage(imgForm, 'JPEG', 73, 5, 64, 30);
 
-    doc.text('Dados informados na simulação', 62, 40);
-    doc.text(document.getElementById('nameLabel').innerText, 10, 50);
+    doc.text(
+      'Dados informados na simulação',
+      62,
+      40,
+      doc.setTextColor('#103C69', doc.setFontType('bold'))
+    );
+    doc.text(
+      document.getElementById('nameLabel').innerText,
+      10,
+      50,
+      doc.setTextColor('#000000'),
+      doc.setFontType('normal')
+    );
     doc.text(document.getElementById('name').value, 30, 50);
     doc.text(document.getElementById('ageLabel').innerText, 10, 60);
     doc.text(document.getElementById('age').value, 30, 60);
     doc.text(document.getElementById('retirementAgeLabel').innerText, 10, 70);
     doc.text(document.getElementById('retirementAge').value, 75, 70);
+
+    doc.addPage();
+    doc.addImage(imgForm, 'JPEG', 73, 5, 64, 30);
+    doc.text(
+      'Resultados da simulação',
+      62,
+      40,
+      doc.setTextColor('#103C69'),
+      doc.setFontType('bold')
+    );
+    doc.text(
+      document.getElementById('nameLabel').innerText,
+      10,
+      50,
+      doc.setTextColor('#000000'),
+      doc.setFontType('normal')
+    );
+    doc.text(document.getElementById('name').value, 30, 50);
+    doc.text(document.getElementById('ageLabel').innerText, 10, 60);
+    doc.text(document.getElementById('age').value, 30, 60);
+    doc.text(document.getElementById('retirementAgeLabel').innerText, 10, 70);
+    doc.text(document.getElementById('retirementAge').value, 75, 70);
+
     // save the file
     doc.save('simulador.pdf');
   }
